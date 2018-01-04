@@ -1,11 +1,12 @@
 {
   "name": "@sarunint-srcs/angular-simplemde",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "./build.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "rollup": "^0.53.3",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^2.0.1",
+    "standard-version": "^4.3.0",
     "typescript": "~2.5.3"
   },
   "dependencies": {
@@ -35,5 +37,10 @@
     "rxjs": "^5.5.6",
     "simplemde": "^1.11.2",
     "zone.js": "^0.8.19"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "node ./update-package-json-template.js"
+    }
   }
 }
