@@ -29,6 +29,7 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
   @Input() options: SimpleMDE.Options;
   simplemde: SimpleMDE;
   _onChange: (value: string) => void;
+  _onTouched: () => void;
   temp: string;
 
   constructor(
@@ -50,6 +51,10 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
     this.simplemde.codemirror.on('change', () => {
       this.onChange(this.simplemde.value());
     });
+
+    this.simplemde.codemirror.on('blur', () => {
+      this.onTouched();
+    })
   }
 
   ngOnDestroy() {
@@ -59,6 +64,12 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
   onChange(value: any) {
     if (this._onChange) {
       this._onChange(value);
+    }
+  }
+
+  onTouched() {
+    if (this._onTouched) {
+      this._onTouched();
     }
   }
 
@@ -74,7 +85,7 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
     this._onChange = fn;
   }
 
-  registerOnTouched(fn: any): void {
-    throw new Error('Method not implemented.');
+  registerOnTouched(fn: () => void) {
+    this._onTouched = fn;
   }
 }
