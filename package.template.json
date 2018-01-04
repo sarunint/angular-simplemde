@@ -1,6 +1,6 @@
 {
   "name": "@sarunint/angular-simplemde",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "An Angular component for SimpleMDE",
   "main": "bundles/angular_simplemde.umd.js",
   "repository": {

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0-alpha.2"></a>
+# [1.0.0-alpha.2](https://github.com/sarunint/angular-simplemde/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2018-01-04)
+
+
+### Bug Fixes
+
+* allow value write before AfterViewInit ([0acd6dc](https://github.com/sarunint/angular-simplemde/commit/0acd6dc))
+
+
+
 <a name="1.0.0-alpha.1"></a>
 # 1.0.0-alpha.1 (2018-01-04)
 
