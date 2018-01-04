@@ -40,7 +40,8 @@
   },
   "standard-version": {
     "scripts": {
-      "postbump": "node ./update-package-json-template.js && git add package.template.json"
+      "postbump": "node ./update-package-json-template.js && git add package.template.json",
+      "posttag": "npm run build"
     }
   }
 }
