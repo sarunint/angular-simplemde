@@ -29,6 +29,7 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
   @Input() options: SimpleMDE.Options;
   simplemde: SimpleMDE;
   _onChange: (value: string) => void;
+  temp: string;
 
   constructor(
     @Inject(SIMPLEMDE_DEFAULT_OPTIONS)
@@ -41,6 +42,10 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
       ...this.options,
       element: this.textarea.nativeElement
     });
+
+    if (this.temp) {
+      this.simplemde.value(this.temp);
+    }
 
     this.simplemde.codemirror.on('change', () => {
       this.onChange(this.simplemde.value());
@@ -58,7 +63,11 @@ export class SimpleMDEComponent implements ControlValueAccessor, AfterViewInit, 
   }
 
   writeValue(value: string): void {
-    this.simplemde.value(value);
+    if (this.simplemde) {
+      this.simplemde.value(value);
+    } else {
+      this.temp = value;
+    }
   }
 
   registerOnChange(fn: (value: string) => void) {
