@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "plugins": [
+      {
+        "name": "@angular/language-service"
+      }
+    ],
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true
+  },
+  "files": [
+    "./index.ts"
+  ]
+}

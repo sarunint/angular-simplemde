@@ -1,0 +1,33 @@
+{
+  "name": "@sarunint/angular-simplemde",
+  "version": "1.0.0-alpha.1",
+  "description": "An Angular component for SimpleMDE",
+  "main": "bundles/angular_simplemde.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "github:sarunint/angular-simplemde"
+  },
+  "author": {
+    "name": "Sarun Intaralawan",
+    "email": "sarunint+npm@sarunint.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarunint/angular-simplemde/issues"
+  },
+  "homepage": "https://github.com/sarunint/angular-simplemde#readme",
+  "peerDependencies": {
+    "@angular/common": "^5.1.2",
+    "@angular/core": "^5.1.2",
+    "@angular/forms": "^5.1.2",
+    "simplemde": "^1.11.2"
+  },
+  "keywords": [
+    "angular",
+    "markdown",
+    "simplemde"
+  ],
+  "module": "esm5/angular_simplemde.js",
+  "es2015": "esm2015/angular_simplemde.js",
+  "typings": "angular_simplemde.d.ts"
+}
