@@ -12,14 +12,15 @@ npm install @sarunint/angular-simplemde
 
 See [this StackBlitz demo](https://angular-simplemde-sample.stackblitz.io/) for sample usage.
 
+**Note**: You need to import SimpleMDE's CSS manually.
+
 ## Issues
 
 To be honest, this is my first time writing an Angular Library. If you find any bugs, please feel free to file an issue.
 
 ## TODO
 
-[ ] Documentation
-[ ] CSS
+* Documentation
 
 ## Documentation
 
