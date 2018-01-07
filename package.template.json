@@ -20,7 +20,8 @@
     "@angular/common": "^5.1.2",
     "@angular/core": "^5.1.2",
     "@angular/forms": "^5.1.2",
-    "simplemde": "^1.11.2"
+    "simplemde": "^1.11.2",
+    "@types/simplemde": "^1.11.7"
   },
   "keywords": [
     "angular",
