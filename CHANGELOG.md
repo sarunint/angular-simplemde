@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* **package.json:** add `[@types](https://github.com/types)/simplemde` to peerDependencies ([335badf](https://github.com/sarunint/angular-simplemde/commit/335badf))
+* **package.json:** add `@types/simplemde` to peerDependencies ([335badf](https://github.com/sarunint/angular-simplemde/commit/335badf))
 
 
 
